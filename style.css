@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo-sec {
+    display: block;
+}
+.logo-sec > img {
+    width: 200px;
+    height: auto;
+}
+
+.heading-sec > h1 {
+    font-size: 3.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+.heading-sec > h1 > span {
+    color: darkblue;
+    font-style: italic;
+    transition: ease-in .5s;
+}
+.heading-sec > h1 > span:hover {
+    cursor: pointer;
+    transition: ease-in .5s;
+    color: white;
+    box-shadow: 10px 10px 10px #0a148695;
+    background-color: black;
+}
+
+.body-sec {
+    margin-top: 10px;
+    width: 100%;
+}
+.body-sec img {
+    width: 250px;
+    border: 5px solid black;
+    float: left;
+    transition: ease-in-out .5s;
+}
+.body-sec img:hover {
+    cursor: pointer;
+    transition: ease-in-out .5s;
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 10px #00000095;
+}
+
+.body-sec h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin-left: 280px;
+}
+.body-sec p {
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: small;
+    margin-left: 280px;
+}
+
+.sec-1 {
+    width: 50%;
+    float: left;
+    padding-right: 70px;
+}
+
+.sec-2 {
+    width: 50%;
+    float: right;
+    padding-right: 50px;
+}
+
+footer > h2 {
+    font-size: 1.2rem;
+    color: darkblue;
+    text-align: end;
+    font-style: italic;
+}
+
+/* Media Queries */
+
+@media (max-width: 1150px) {
+    .sec-1 {
+        float: none;
+        display: inline-block;
+        width: 100%;
+        padding-right: 20px;
+    }
+    .sec-2 {
+        float: none;
+        display: inline-block;
+        width: 100%;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-sec > img {
+        width: 150px;
+        height: auto;
+    }
+    .heading-sec > h1 {
+        text-align: center;
+    }
+    .body-sec img {
+        width: 400px;
+        float: none;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .body-sec h2 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .body-sec p {
+        margin-left: 0;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 1rem;
+    }
+    
+    footer > h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .heading-sec > h1 {
+        font-size: 2.5rem;
+    }
+}
